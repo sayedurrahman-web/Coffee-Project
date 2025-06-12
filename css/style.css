@@ -1,0 +1,308 @@
+:root{
+    --main-color:#deab5f;
+    --primary-color:#312e12;
+}
+button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #100e0f;
+}
+/*nav start*/
+ h1 img{
+    width: 70px;
+    height: auto;
+    border-radius: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 50px;
+
+}
+  
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+/*nav end*/
+
+/*header start*/
+.header{
+    background: url(../image/coffee5.jpg);
+    background-position: center;
+    
+    background-size: cover;
+    height: 100vh;
+    font-family: 'playfair display',serif;
+    font-weight: normal;
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    text-align: center;
+
+    .main-heading{
+        position: absolute;
+        top: 7rem;
+        font-size: 4rem;
+        word-spacing: 10px;
+    
+    }
+    .primary-heading{
+        position: absolute;
+        bottom: 4rem;
+        font-size: 4rem;
+        word-spacing: 10px;
+        margin-bottom: -50px;
+    
+    }
+    .main-btn{
+        position: absolute;
+        bottom: 2rem;
+        padding: 10px 30px;
+        margin-top: 20px;
+        background: transparent;
+        background: var(--main-color);
+        transform: translateY(60px);
+    }
+}
+/*header end*/
+
+/* our story start */
+#our-story{
+    height: 100vh;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    background: url(../image/coffee2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family:'playfair display',serif ;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateX(-100px);
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-120px);
+}
+
+.section-content p{
+max-width: 500px;
+color: #fff;
+font-family: sans-serif;
+line-height: 20px;
+margin: 20px 0;
+}
+/* our story end */
+
+/* coffee start */
+.coffee-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.content-section p{
+max-width: 500px;
+margin-top: 20px;
+font-family: sans-serif;
+color: #fff;
+}
+.img-2{
+    width: 400px;
+    height: 400px;
+}
+.title-two{
+    font-size: 3rem;
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+
+/* coffee start end */
+
+.products{
+    margin-top: 10px;
+}
+.title-three{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    color: #fff;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+}
+.img-one{
+    background: url(../image/coffee1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+.img-two{
+    background: url(../image/coffee6.jpg);
+    background-position: center;
+    background-size: cover;
+     border-radius: 15px;
+}
+.img-three{
+    background: url(../image/coffee7.jpg);
+    background-position: center;
+    background-size: cover;
+     border-radius: 15px;
+}
+.card-title{
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 50px;
+
+}
+.card .items p{
+color: #fff;
+margin: 20px 0;
+font-family: sans-serif;
+}
+
+/* products end */
+footer{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+footer .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+footer .heading-info{
+    margin-bottom: 20px;
+}
+footer p{
+    line-height: 25px;
+}
+span{
+    color: var(--main-color);
+}
+
+
+.para{
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+/* project end */
+/* responsness */
+@media only sceen and(max-width:768px) {
+    .main-headings,.primary-heading{
+        font-size: 2.5rem;
+    }
+    #our-story .title{
+    transform: translateX(50px);
+}
+#our-story .line{
+    display: none;
+}
+.content-section{
+    text-align: center;
+}
+#our-story .img-container .img{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.coffee-container .img-container{
+    margin-top: 5rem;
+    width: 50%;
+}
+.title{
+    margin: 0 auto;
+}
+.title-two{
+    margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
